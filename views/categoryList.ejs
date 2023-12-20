@@ -1,0 +1,14 @@
+<h1 class="text-4xl mb-6"><%= title %></h1>
+
+<ul>
+  <% if (allCategories.length) { %> <% for( let i = 0; i < allCategories.length;
+  i++ ) { %>
+  <li>
+    <a href="<%=`/categories/${allCategories[i].url}`%>">
+      <%=allCategories[i].name%></a
+    >
+  </li>
+  <% } %> <% }else{ %>
+  <li>There are no categories.</li>
+  <%}%>
+</ul>

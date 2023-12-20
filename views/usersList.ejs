@@ -1,0 +1,11 @@
+<h1 class="text-4xl mb-6"><%= title %></h1>
+
+<ul>
+  <% if (allUsers.length) { %> <% for( let i = 0; i < allUsers.length; i++ ) {
+  %>
+  <li><a href="<%=`users/${allUsers[i].url}`%>"> <%=allUsers[i].name%> </a></li>
+
+  <% } %> <% }else{%>
+  <li>There are no users.</li>
+  <%}%>
+</ul>

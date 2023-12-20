@@ -1,0 +1,53 @@
+<h1 class="text-4xl mb-6"><%= title %></h1>
+
+<form action="" method="post">
+  <div class="mb-4">
+    <label for="name" class="block font-medium leading-6 text-gray-900 mb-2"
+      >User name:</label
+    >
+    <input
+      class="w-full rounded-md border-0 p-2.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-300 sm:text-sm sm:leading-6"
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Username"
+      required
+    />
+  </div>
+  <div class="mb-4">
+    <label for="passwrod" class="block font-medium leading-6 text-gray-900 mb-2"
+      >Password:</label
+    >
+    <input
+      class="w-full rounded-md border-0 p-2.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-300 sm:text-sm sm:leading-6"
+      type="password"
+      name="password"
+      id="password"
+      placeholder="************"
+      required
+    />
+  </div>
+  <div class="mb-4">
+    <label for="shopName" class="block font-medium leading-6 text-gray-900 mb-2"
+      >First shop name:</label
+    >
+    <input
+      class="w-full rounded-md border-0 p-2.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-300 sm:text-sm sm:leading-6"
+      type="text"
+      name="shopName"
+      id="shopName"
+      placeholder="A creative shop name"
+      required
+    />
+  </div>
+
+  <button type="submit" class="bg-sky-500 text-white p-3 my-3">Submit</button>
+</form>
+
+<% if (typeof errors != "undefined") { %>
+<ul>
+  <% for( let i = 0; i < errors.length; i++ ) { %>
+  <li><%= errors[i].msg%></li>
+  <% } %>
+</ul>
+<% } %>

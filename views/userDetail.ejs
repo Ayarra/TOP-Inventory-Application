@@ -1,0 +1,14 @@
+<h1 class="text-4xl mb-6"><%= title %></h1>
+
+<h2><%= user.name %></h2>
+
+<ul>
+  <% if (userShops.length) { %> <% for( let i = 0; i < userShops.length; i++ ) {
+  %>
+  <li>
+    <a href="<%= userShops[i].url %>"> <%=userShops[i].name%></a>
+  </li>
+  <% }}else{ %>
+  <li>This user has no shops.</li>
+  <% } %>
+</ul>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= locals.title %></title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="flex gap-4 mt-10 mx-4">
+      <div>
+        <ul class="text-sky-500">
+          <li class="hover:underline my-2">
+            <a href="/">Home</a>
+          </li>
+          <li class="hover:underline my-2">
+            <a href="/users">All Users</a>
+          </li>
+
+          <li class="hover:underline my-2">
+            <a href="/shops">All Shops</a>
+          </li>
+          <li class="hover:underline my-2">
+            <a href="/items">All Items</a>
+          </li>
+          <li class="hover:underline my-2">
+            <a href="/categories">All Categories</a>
+          </li>
+          <hr />
+          <li class="hover:underline my-2">
+            <a href="/users/create">Create new user</a>
+          </li>
+          <li class="hover:underline my-2">
+            <a href="/shops/create">Create new shop</a>
+          </li>
+          <li class="hover:underline my-2">
+            <a href="/categories/create">Create new category</a>
+          </li>
+          <li class="hover:underline my-2">
+            <a href="/items/create">Create new item</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex-auto"><%- body%></div>
+    </div>
+  </body>
+</html>

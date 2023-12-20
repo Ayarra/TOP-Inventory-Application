@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<title><%= title %></title>
+
+<p class="my-10">
+  Welcome to <em>The Inventory Management Project</em>, a very basic Express
+  website.
+</p>
+<p>The Inventory has the following records:</p>
+<ul class="list-disc ml-6">
+  <li><strong>Users:</strong> <%=locals.userCount%></li>
+  <li><strong>Shops:</strong> <%=locals.shopCount%></li>
+  <li><strong>Items:</strong> <%=locals.itemCount%></li>
+  <li><strong>Categories: </strong><%=locals.categoryCount%></li>
+</ul>
